@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "sha": "29ba3fc63daaedf54446067be7fd1df711ab179f",
+    "short": "29ba3fc",
+    "platform": "linux",
+    "repo": "elijah286/Dynamic-Scaling",
+    "pages_url": "https://elijah286.github.io/Dynamic-Scaling",
+    "pages_base": "../../..",
+    "commit": {
+      "message": "Added the code!",
+      "author": "Wiebe Walstra",
+      "date": "2018-09-14T15:16:44+02:00"
+    },
+    "generated_utc": "2026-09-23 13:50 UTC",
+    "analysis_date": "Wednesday, September 23, 2026 01:50:22 PM",
+    "duration": "00:02:53.90"
+  },
+  "summary": {
+    "vis_analyzed": 120,
+    "tests_run": 12480,
+    "passed": 11504,
+    "failed": 976,
+    "skipped": 0,
+    "findings": 1222,
+    "vis_with_findings": 102
+  },
+  "errors": {
+    "vi_not_loadable": 0,
+    "test_not_loadable": 0,
+    "test_not_runnable": 0,
+    "test_error_out": 0
+  },
+  "rule_counts": [
+    {
+      "test": "Wires Under Objects",
+      "severity": "style",
+      "count": 184,
+      "vi_count": 60
+    },
+    {
+      "test": "Spell Check",
+      "severity": "documentation",
+      "count": 121,
+      "vi_count": 73
+    },
+    {
+      "test": "Separate Compiled Code Setting",
+      "severity": "style",
+      "count": 102,
+      "vi_count": 102
+    },
+    {
+      "test": "Enabled Debugging",
+      "severity": "performance",
+      "count": 99,
+      "vi_count": 99
+    },
+    {
+      "test": "Comment Usage",
+      "severity": "documentation",
+      "count": 95,
+      "vi_count": 95
+    },
+    {
+      "test": "Error Cluster Wired",
+      "severity": "correctness",
+      "count": 92,
+      "vi_count": 30
+    },
+    {
+      "test": "Wire Bends",
+      "severity": "style",
+      "count": 76,
+      "vi_count": 40
+    },
+    {
+      "test": "Control Alignment",
+      "severity": "style",
+      "count": 69,
+      "vi_count": 69
+    },
+    {
+      "test": "Tunnel Position",
+      "severity": "style",
+      "count": 58,
+      "vi_count": 26
+    },
+    {
+      "test": "VI Documentation",
+      "severity": "documentation",
+      "count": 51,
+      "vi_count": 51
+    },
+    {
+      "test": "Backwards Wires",
+      "severity": "style",
+      "count": 36,
+      "vi_count": 20
+    },
+    {
+      "test": "Panel Size and Position",
+      "severity": "style",
+      "count": 29,
+      "vi_count": 25
+    },
+    {
+      "test": "Reentrant VI Issues",
+      "severity": "correctness",
+      "count": 28,
+      "vi_count": 13
+    },
+    {
+      "test": "Control Terminal Wiring",
+      "severity": "style",
+      "count": 21,
+      "vi_count": 19
+    },
+    {
+      "test": "Diagram Size",
+      "severity": "style",
+      "count": 18,
+      "vi_count": 18
+    },
+    {
+      "test": "Overlapping Controls",
+      "severity": "correctness",
+      "count": 17,
+      "vi_count": 10
+    },
+    {
+      "test": "Default Icon",
+      "severity": "style",
+      "count": 16,
+      "vi_count": 16
+    },
+    {
+      "test": "Unused Code",
+      "severity": "performance",
+      "count": 15,
+      "vi_count": 8
+    },
+    {
+      "test": "Array Constant Style",
+      "severity": "style",
+      "count": 14,
+      "vi_count": 8
+    },
+    {
+      "test": "Arrays and Strings in Loops",
+      "severity": "performance",
+      "count": 10,
+      "vi_count": 8
+    },
+    {
+      "test": "Duplicate Control Labels",
+      "severity": "correctness",
+      "count": 9,
+      "vi_count": 9
+    },
+    {
+      "test": "Connector Inputs and Outputs",
+      "severity": "correctness",
+      "count": 7,
+      "vi_count": 7
+    },
+    {
+      "test": "For Loop Reference Handling",
+      "severity": "correctness",
+      "count": 7,
+      "vi_count": 7
+    },
+    {
+      "test": "Hidden Objects in Structures",
+      "severity": "correctness",
+      "count": 7,
+      "vi_count": 5
+    },
+    {
+      "test": "Approved Bookmark Tags",
+      "severity": "style",
+      "count": 5,
+      "vi_count": 4
+    },
+    {
+      "test": "Parallelizable Loops",
+      "severity": "performance",
+      "count": 4,
+      "vi_count": 2
+    },
+    {
+      "test": "Auto Error Handling Enabled",
+      "severity": "correctness",
+      "count": 3,
+      "vi_count": 3
+    },
+    {
+      "test": "Coercion Dots",
+      "severity": "performance",
+      "count": 3,
+      "vi_count": 3
+    },
+    {
+      "test": "In Place Element Structure Usage",
+      "severity": "performance",
+      "count": 3,
+      "vi_count": 2
+    },
+    {
+      "test": "Wire Crossings",
+      "severity": "style",
+      "count": 3,
+      "vi_count": 1
+    },
+    {
+      "test": "Array Sum and Product Overflow",
+      "severity": "style",
+      "count": 2,
+      "vi_count": 2
+    },
+    {
+      "test": "Broken VI",
+      "severity": "correctness",
+      "count": 2,
+      "vi_count": 2
+    },
+    {
+      "test": "Diagram Disable Structures",
+      "severity": "style",
+      "count": 2,
+      "vi_count": 2
+    },
+    {
+      "test": "Font Usage",
+      "severity": "style",
+      "count": 2,
+      "vi_count": 2
+    },
+    {
+      "test": "For Loop Error Handling",
+      "severity": "correctness",
+      "count": 2,
+      "vi_count": 1
+    },
+    {
+      "test": "Label Call Library Nodes",
+      "severity": "style",
+      "count": 2,
+      "vi_count": 2
+    },
+    {
+      "test": "Node Count",
+      "severity": "style",
+      "count": 2,
+      "vi_count": 2
+    },
+    {
+      "test": "Wired Terminals in Subdiagrams",
+      "severity": "correctness",
+      "count": 2,
+      "vi_count": 1
+    },
+    {
+      "test": "Bundling Duplicate Names",
+      "severity": "correctness",
+      "count": 1,
+      "vi_count": 1
+    },
+    {
+      "test": "Case Structure Default Frame",
+      "severity": "style",
+      "count": 1,
+      "vi_count": 1
+    },
+    {
+      "test": "Platform Portability",
+      "severity": "style",
+      "count": 1,
+      "vi_count": 1
+    },
+    {
+      "test": "Transparent Labels",
+      "severity": "style",
+      "count": 1,
+      "vi_count": 1
+    }
+  ]
+}
