@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIDiff — Dynamic-Scaling</title>
+<style>
+  :root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--fg:#e6edf3;--fg-muted:#8b949e;--link:#58a6ff;--row:#21262d;--hover:#1c2128}
+  @media(prefers-color-scheme:light){:root{--bg:#fff;--surface:#f6f8fa;--border:#d0d7de;--fg:#1f2328;--fg-muted:#57606a;--link:#0969da;--row:#eaeef2;--hover:#f3f4f6}}
+  *{box-sizing:border-box}
+  body{margin:0;padding:24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--fg)}
+  h1{font-size:1.3em;margin:0 0 4px}
+  .sub{color:var(--fg-muted);font-size:.85em;margin-bottom:18px}
+  table{border-collapse:collapse;width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+  th{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border);color:var(--fg-muted);font-size:.74em;text-transform:uppercase;letter-spacing:.04em}
+  td{padding:9px 12px;border-bottom:1px solid var(--row);font-size:.9em;vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:var(--hover)}
+  a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+  .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.7em;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.03em}
+  .modified{background:#9a6700}.added{background:#1a7f37}.deleted{background:#cf222e}
+  .file{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.84em;word-break:break-all}
+  .note{color:var(--fg-muted);font-size:.8em;margin-top:14px}
+</style>
+</head>
+<body>
+<h1>VIDiff — Dynamic-Scaling</h1>
+<div class="sub">102 file(s) compared &nbsp;|&nbsp; 0 error(s)</div>
+<table><thead><tr><th>Change</th><th>VI</th><th>Report</th></tr></thead><tbody>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Defer Panel Updates.vi</td><td><a href="Dynamic_Scaling-Defer_Panel_Updates.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Get Bounds.vi</td><td><a href="Dynamic_Scaling-Get_Bounds.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Get Minimal Maximal Size.vi</td><td><a href="Dynamic_Scaling-Get_Minimal_Maximal_Size.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Get Status.vi</td><td><a href="Dynamic_Scaling-Get_Status.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Get Visible (Label).vi</td><td><a href="Dynamic_Scaling-Get_Visible__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Get Visible.vi</td><td><a href="Dynamic_Scaling-Get_Visible.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Hit Detect.vi</td><td><a href="Dynamic_Scaling-Hit_Detect.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Hit Splitter.vi</td><td><a href="Dynamic_Scaling-Hit_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Alternative/Distribute.vi</td><td><a href="Dynamic_Scaling-IContainer-Alternative-Distribute.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Alternative/Get Minimal Maximal Size.vi</td><td><a href="Dynamic_Scaling-IContainer-Alternative-Get_Minimal_Maximal_Size.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Alternative/Init Alternative.vi</td><td><a href="Dynamic_Scaling-IContainer-Alternative-Init_Alternative.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Alternative/Show Hide (Label).vi</td><td><a href="Dynamic_Scaling-IContainer-Alternative-Show_Hide__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Distribute.vi</td><td><a href="Dynamic_Scaling-IContainer-Distribute.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Calculate Distribution Sizes.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Calculate_Distribution_Sizes.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Distribute.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Distribute.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Get Limits.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Get_Limits.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Get Minimal Maximal Size.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Get_Minimal_Maximal_Size.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Get Relative Sizes.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Get_Relative_Sizes.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Get Splitter Size.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Get_Splitter_Size.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Get Static.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Get_Static.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Get Vertical.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Get_Vertical.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Init Divider.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Init_Divider.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Saturated Add.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Saturated_Add.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Set Relative Sizes.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Set_Relative_Sizes.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Set Splitter Size.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Set_Splitter_Size.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Splitter/Get Static.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Splitter-Get_Static.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Splitter/Hit Splitter.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Splitter-Hit_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Splitter/Init Splitter.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Splitter-Init_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Divider/Splitter/Resize Pane.vi</td><td><a href="Dynamic_Scaling-IContainer-Divider-Splitter-Resize_Pane.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Get Items Visible.vi</td><td><a href="Dynamic_Scaling-IContainer-Get_Items_Visible.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Get Items.vi</td><td><a href="Dynamic_Scaling-IContainer-Get_Items.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Get Number Of Items.vi</td><td><a href="Dynamic_Scaling-IContainer-Get_Number_Of_Items.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Get Status.vi</td><td><a href="Dynamic_Scaling-IContainer-Get_Status.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Get Visible (Label).vi</td><td><a href="Dynamic_Scaling-IContainer-Get_Visible__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Get Visible.vi</td><td><a href="Dynamic_Scaling-IContainer-Get_Visible.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Hit Detect.vi</td><td><a href="Dynamic_Scaling-IContainer-Hit_Detect.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Hit Splitter.vi</td><td><a href="Dynamic_Scaling-IContainer-Hit_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Close Splitter.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Close_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Close.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Close.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Distribute.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Distribute.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Dynamic Event Handler.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Dynamic_Event_Handler.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Get Active.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Get_Active.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Get Splitter Position.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Get_Splitter_Position.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Horizontal Splitter.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Horizontal_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Init Interaction Splitter.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Init_Interaction_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Init Interaction.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Init_Interaction.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Insert In SubPanel.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Insert_In_SubPanel.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/On Mouse Move.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-On_Mouse_Move.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Set Splitter Position.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Set_Splitter_Position.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Interaction/Vertical Splitter.vi</td><td><a href="Dynamic_Scaling-IContainer-Interaction-Vertical_Splitter.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Resize Pane.vi</td><td><a href="Dynamic_Scaling-IContainer-Resize_Pane.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Resize.vi</td><td><a href="Dynamic_Scaling-IContainer-Resize.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Set Items (Label).vi</td><td><a href="Dynamic_Scaling-IContainer-Set_Items__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Set Items.vi</td><td><a href="Dynamic_Scaling-IContainer-Set_Items.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Set Parent Visible.vi</td><td><a href="Dynamic_Scaling-IContainer-Set_Parent_Visible.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Set Visible.vi</td><td><a href="Dynamic_Scaling-IContainer-Set_Visible.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Show Hide (Label).vi</td><td><a href="Dynamic_Scaling-IContainer-Show_Hide__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Viewport/Distribute.vi</td><td><a href="Dynamic_Scaling-IContainer-Viewport-Distribute.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/IContainer/Viewport/Init Viewport.vi</td><td><a href="Dynamic_Scaling-IContainer-Viewport-Init_Viewport.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Close.vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Close.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Dynamic Event Handler.vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Dynamic_Event_Handler.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Get Status.vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Get_Status.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Get Visible (Label).vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Get_Visible__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Hit Detect.vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Hit_Detect.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Init Interaction By Reference.vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Init_Interaction_By_Reference.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/MMI GetAsyncKeyState.vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-MMI_GetAsyncKeyState.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Resize.vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Resize.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Set Items (Label).vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Set_Items__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Interaction By Refererence/Show Hide (Label).vi</td><td><a href="Dynamic_Scaling-Interaction_By_Refererence-Show_Hide__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Match.vi</td><td><a href="Dynamic_Scaling-Match.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Object/Init Object.vi</td><td><a href="Dynamic_Scaling-Object-Init_Object.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Object/Resize.vi</td><td><a href="Dynamic_Scaling-Object-Resize.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Object/Set Visible From Object.vi</td><td><a href="Dynamic_Scaling-Object-Set_Visible_From_Object.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Resize Pane.vi</td><td><a href="Dynamic_Scaling-Resize_Pane.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Resize.vi</td><td><a href="Dynamic_Scaling-Resize.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Bounds.vi</td><td><a href="Dynamic_Scaling-Set_Bounds.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Items (Label).vi</td><td><a href="Dynamic_Scaling-Set_Items__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Label.vi</td><td><a href="Dynamic_Scaling-Set_Label.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Maximum Graph Area.vi</td><td><a href="Dynamic_Scaling-Set_Maximum_Graph_Area.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Minimal Maximal Size.vi</td><td><a href="Dynamic_Scaling-Set_Minimal_Maximal_Size.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Object Bounds.vi</td><td><a href="Dynamic_Scaling-Set_Object_Bounds.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Object Size Difference.vi</td><td><a href="Dynamic_Scaling-Set_Object_Size_Difference.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Object Size.vi</td><td><a href="Dynamic_Scaling-Set_Object_Size.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Parent Visible.vi</td><td><a href="Dynamic_Scaling-Set_Parent_Visible.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Set Visible.vi</td><td><a href="Dynamic_Scaling-Set_Visible.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/Show Hide (Label).vi</td><td><a href="Dynamic_Scaling-Show_Hide__Label_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST MMI Scaling (Alternatives).vi</td><td><a href="Dynamic_Scaling-TEST_MMI_Scaling__Alternatives_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST MMI Scaling (By Reference).vi</td><td><a href="Dynamic_Scaling-TEST_MMI_Scaling__By_Reference_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST MMI Scaling (In SubPanel).vi</td><td><a href="Dynamic_Scaling-TEST_MMI_Scaling__In_SubPanel_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST MMI Scaling.vi</td><td><a href="Dynamic_Scaling-TEST_MMI_Scaling.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Advanced By Reference Splitter).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Advanced_By_Reference_Splitter_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Advanced Interactive Splitter).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Advanced_Interactive_Splitter_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (By Reference Splitter).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__By_Reference_Splitter_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Interactive Splitter).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Interactive_Splitter_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Non Default Scaling Graph).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Non_Default_Scaling_Graph_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Non Default Scaling Offset).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Non_Default_Scaling_Offset_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Non Default Scaling Overlapping).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Non_Default_Scaling_Overlapping_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Non Default Scaling).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Non_Default_Scaling_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Show Hide).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Show_Hide_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Splitter).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Splitter_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds (Viewport).vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds__Viewport_.vi/index.html">View snapshot &rarr;</a></td></tr>
+<tr><td><span class="badge added">added</span></td><td class="file">Dynamic Scaling/TEST Object Manual Bounds.vi</td><td><a href="Dynamic_Scaling-TEST_Object_Manual_Bounds.vi/index.html">View snapshot &rarr;</a></td></tr>
+</tbody></table>
+<p class="note"><strong>modified</strong> VIs show a true side-by-side diff. <strong>added</strong> / <strong>deleted</strong> VIs have no counterpart to compare, so a single-version snapshot is shown.</p>
+</body></html>
