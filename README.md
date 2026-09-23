@@ -1,4 +1,12 @@
 # Dynamic-Scaling
+
+<!-- labview-ci:dashboard -->
+## LabVIEW CI
+
+[![LabVIEW CI dashboard](https://img.shields.io/badge/LabVIEW%20CI-dashboard-2ea44f)](https://elijah286.github.io/Dynamic-Scaling/)
+
+LabVIEW CI runs on every pull request. See the [**CI dashboard**](https://elijah286.github.io/Dynamic-Scaling/) for build status, VI Analyzer results, VI diffs, and mass-compile reports.
+
 Dynamic UI Scaling Toolkit for LabVIEW
 
 This library provides flexible front panel scaling for LabVIEW. One of the key features is the dynamic showing\hiding of panes\splitters.
