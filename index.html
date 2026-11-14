@@ -1304,7 +1304,7 @@
     // activities to queue. Reuses dispatchCells (oldest-first, snapshots as one
     // backfill) + the same token and optimistic-queued bridge as every other
     // dispatch on the dashboard.
-    var HIST = [{"sha": "29ba3fc63daaedf54446067be7fd1df711ab179f", "short": "29ba3fc", "msg": "Added the code!", "dep_only": false, "snapshots2": {"windows": {"have": 102, "total": 102}, "linux": {"have": 0, "total": 102}}}];                        // [{sha, short, msg}] newest-first (project revisions)
+    var HIST = [{"sha": "29ba3fc63daaedf54446067be7fd1df711ab179f", "short": "29ba3fc", "msg": "Added the code!", "dep_only": false, "snapshots2": {"windows": {"have": 102, "total": 102}, "linux": {"have": 102, "total": 102}}}];                        // [{sha, short, msg}] newest-first (project revisions)
     var RAN = {"antidoc": 1, "masscompile": 1, "sbom-generation": 1, "snapshots": 1, "snapshots2": 1, "unit-tests": 1, "vi-analyzer": 1, "vidiff": 1};                     // {cap:1} caps with a result/active run somewhere in history
     var CAP_META = {                            // label + sub for each known capability
       'snapshots':   ['VI Snapshots', 'Renders every changed VI (classic HTML snapshots)'],
@@ -1912,7 +1912,7 @@
   <script>
   (function(){
     var RT = {"masscompile": {"label": "Mass Compile", "platforms": {"windows": {"wf": "masscompile-windows-container.yml", "inputs": {"commit_sha": "{sha}"}}, "linux": {"wf": "masscompile-linux-container.yml", "inputs": {"commit_sha": "{sha}"}}}}, "vi-analyzer": {"label": "VI Analyzer", "platforms": {"windows": {"wf": "run-vi-analyzer-windows-container.yml", "inputs": {"commit_sha": "{sha}"}}, "linux": {"wf": "run-vi-analyzer-linux-container.yml", "inputs": {"commit_sha": "{sha}"}}}}, "vidiff": {"label": "VIDiff", "platforms": {"windows": {"wf": "vidiff-windows-container.yml", "inputs": {"head_sha": "{sha}", "base_sha": "{parent}"}}, "linux": {"wf": "vidiff-linux-container.yml", "inputs": {"head_sha": "{sha}", "base_sha": "{parent}"}}}}, "snapshots": {"label": "VI Snapshots", "platforms": {"all": {"wf": "vi-snapshots.yml", "inputs": {"mode": "backfill"}}}}, "snapshots2": {"label": "VI Browser 2.0 Snapshots", "platforms": {"windows": {"wf": "vi-snapshots-json-windows.yml", "inputs": {"target_sha": "{sha}"}}, "linux": {"wf": "vi-snapshots-json.yml", "inputs": {"mode": "head", "target_sha": "{sha}"}}}}, "unit-tests": {"label": "Unit Tests", "platforms": {"windows": {"wf": "unit-tests-windows-container.yml", "inputs": {"commit_sha": "{sha}"}}}}, "antidoc": {"label": "Antidoc", "platforms": {"windows": {"wf": "run-antidoc-windows-container.yml", "inputs": {"commit_sha": "{sha}"}}}}, "builds": {"label": "Builds", "platforms": {"windows": {"wf": "build-binaries-windows-container.yml", "inputs": {"commit_sha": "{sha}"}}, "linux": {"wf": "build-binaries-linux-container.yml", "inputs": {"commit_sha": "{sha}"}}}}, "sbom-generation": {"label": "SBOM Generation", "platforms": {"windows": {"wf": "generate-sbom-windows-container.yml", "inputs": {"commit_sha": "{sha}"}}}}};
-    var HIST = [{"sha": "29ba3fc63daaedf54446067be7fd1df711ab179f", "short": "29ba3fc", "msg": "Added the code!", "dep_only": false, "snapshots2": {"windows": {"have": 102, "total": 102}, "linux": {"have": 0, "total": 102}}}];
+    var HIST = [{"sha": "29ba3fc63daaedf54446067be7fd1df711ab179f", "short": "29ba3fc", "msg": "Added the code!", "dep_only": false, "snapshots2": {"windows": {"have": 102, "total": 102}, "linux": {"have": 102, "total": 102}}}];
     var REPO = "elijah286/Dynamic-Scaling";
     var BRANCH = "master";
     var TOK_KEY = "lvci_dispatch_token";
@@ -2092,7 +2092,7 @@
   </script>
   <main class="lvci-main">
   <h1>CI Dashboard — Dynamic-Scaling</h1>
-  <div class="sub">Last updated: 2026-11-14 22:02 UTC &nbsp;|&nbsp; Auto-refreshes every 15 min</div>
+  <div class="sub">Last updated: 2026-11-14 23:02 UTC &nbsp;|&nbsp; Auto-refreshes every 15 min</div>
   <div class="nav">
     <a href="https://github.com/elijah286/Dynamic-Scaling">GitHub</a>
     <a href="https://github.com/elijah286/Dynamic-Scaling/actions">Actions</a>
